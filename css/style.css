@@ -44,14 +44,14 @@ a img {
   background-color: #fafafa;
   line-height: 100px;
   font-size: 15px;
-  z-index: 1000;
+  z-index: 990;
 }
 
 .mobile-nav {
   display: none;
 }
 
-.name {z-index: 88888;}
+.name {z-index: 990;}
 
 #illustration {
   background-color: #4C5364;
@@ -93,6 +93,7 @@ a img {
 }
 
 #call-to-action button {
+  font-family: 'Open Sans', sans-serif;
     padding: 9px 27px 12px;
     font-size: 1.1rem;
     border-radius: 4px;
@@ -281,7 +282,7 @@ img.icon:hover {
   background: #eee;
   height: auto;
   margin-top: -30px;
-  text-align: center;
+  /*text-align: center;*/
   padding: 60px 0 60px 0;
   font-size: 26px;
   line-height: 40px;
@@ -344,7 +345,7 @@ img.icon:hover {
 .toc-holder {
   text-align: right;
 /*  //min-width: 60px;*/
-  z-index: 30000;
+  z-index: 994;
 
 }
 
@@ -387,7 +388,7 @@ a.toc-link {
   color: #ccc;
   position: relative;
   display: block;
-  z-index: 1000;
+  z-index: 994;
   min-width:200px;
   height: 40px;
   line-height: 40px;
@@ -682,4 +683,84 @@ $menu-items: 3;
     top: 150px;
     animation-timing-function: ease-out;
   }
+}
+
+/*Contact popup here*/
+.contact-popup {
+  position: fixed;
+  background: #fafafa;
+  border-radius: 4px;
+  width: 40%;
+  right: 30%;
+  top: 13%;
+  padding: 15px;
+  z-index: 999
+}
+
+.contact-popup #submit-btn {
+  margin-left: 5%;
+  width: 40%;
+  color: #fafafa;
+  background: #78a5a3;
+  cursor: pointer;
+  height: 45px;
+}
+
+.contact-popup h4 {
+  margin: 3% 5% 3%;
+}
+
+#input-fields {
+  margin-left: 5%;
+}
+
+#input-fields label {
+  font-size: 1.1rem;
+}
+
+.contact-popup input {
+  width: 93%;
+  font-size: 1.02rem;
+  height: 40px;
+  margin-bottom: 7px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding-left: 2%;
+}
+
+.contact-popup textarea {
+  width: 93%;
+  height: 100px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  resize: none;
+  padding-left: 2%;
+  padding-top: 2%;
+  font-size: 1.02rem;
+}
+
+.fade-out-background {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 996;
+}
+
+#close-popup {
+  background: #78a5a3;
+  border: 2px solid #fafafa;
+  color: #fafafa;
+  height: 36px;
+  width: 36px;
+  border-radius: 50%;
+  position: absolute;
+  font-size: 1.1rem;
+  right: -16px;
+  top: -16px;
+  cursor: pointer;
+  box-shadow: -1px 1px 1px #ccc;
 }

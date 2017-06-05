@@ -13,6 +13,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 	</head>
 	<body>
+		<div style="display: none" id="faded-background" class="fade-out-background"></div>
 		<div id="toc-holder" class="toc-holder">
 			<a href="#" class="toc-link" id="toc-link"><span>&#9776;</span></a>
 			<ul id="toc" class="toc">
@@ -40,7 +41,7 @@
 						<div id="call-to-action">
 							<h1>Front End Developer</h1>
 							<h2>Clean, smart and effective development</h2>
-							<button><span>&#9993;</span> Message Me</button>
+							<button id="message-btn"><span>&#9993;</span> Message Me</button>
 						</div>
 						<img src="images/devimage.png" />
 					</div>
@@ -162,6 +163,23 @@
 						<!-- <a target="_blank" href="http://www.twitter.com/kalynnakano">Twitter</a> -->
 				</span>
 			</div>
+		</div>
+		<div style="display:none" class="contact-popup">
+			<form>
+				<button id="close-popup">X</button>
+				<h4>Message me</h4>
+				<div id="input-fields">
+					<label for="name">Your Name (required)</label>
+					<input type="text" name="name"/>
+					<label>Your Email (required)</label>
+					<input type="email" name="email">
+					<label for="subject">Subject</label>
+					<input type="text" name="subject">
+					<label for="message">Your Message</label>
+					<textarea name="message"></textarea>
+				</div>
+				<input id="submit-btn" type="submit" value="Send Message" />
+			</form>
 		</div>
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.fixedTOC.js"></script>
