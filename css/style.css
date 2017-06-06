@@ -777,6 +777,14 @@ $menu-items: 3;
     display:none;
   }
 
+  #subject {
+    display: none;
+  }
+
+  #subjectLabel {
+    display: none;
+  }
+
   #call-to-action {
     width: 80%;
     text-align: center;
