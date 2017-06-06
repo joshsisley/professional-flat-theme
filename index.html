@@ -20,7 +20,6 @@
 				<li class="toc-h1"><a href="#about">About</a></li>
 				<li class="toc-h1"><a href="#resume">Résumé</a></li>
 				<li class="toc-h1"><a href="#work">Work</a></li>
-				<li class="toc-h1"><a href="#contact">Contact</a></li>
 			</ul>
 		</div>
 		<div id="page-wrapper">
@@ -165,18 +164,18 @@
 			</div>
 		</div>
 		<div style="display:none" class="contact-popup">
-			<form>
-				<button id="close-popup">X</button>
+			<button id="close-popup">X</button>
+			<form name="contactform" method="post" action="mailer.php">
 				<h4>Message me</h4>
 				<div id="input-fields">
 					<label for="name">Your Name (required)</label>
-					<input type="text" name="name"/>
+					<input type="text" name="inputName"/>
 					<label>Your Email (required)</label>
-					<input type="email" name="email">
+					<input type="email" name="inputEmail">
 					<label for="subject">Subject</label>
 					<input type="text" name="subject">
 					<label for="message">Your Message</label>
-					<textarea name="message"></textarea>
+					<textarea name="inputMessage"></textarea>
 				</div>
 				<input id="submit-btn" type="submit" value="Send Message" />
 			</form>
