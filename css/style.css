@@ -766,3 +766,37 @@ $menu-items: 3;
   cursor: pointer;
   box-shadow: -1px 1px 1px #ccc;
 }
+
+@media only screen and (max-width: 415px) {
+  #illustration-content {
+    width: 100%;
+  }
+
+  #illustration-content img {
+    display:none;
+  }
+
+  #call-to-action {
+    width: 80%;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 10%;
+    float: left;
+    padding-bottom: 100px;
+  }
+
+  #call-to-action h1 {
+    font-size: 1.5rem;
+  }
+
+  #call-to-action h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  .contact-popup {
+    width: 80%;
+    right: 7%;
+    top: 6%;
+  }
+}
