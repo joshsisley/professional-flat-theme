@@ -767,6 +767,7 @@ $menu-items: 3;
   box-shadow: -1px 1px 1px #ccc;
 }
 
+/*For mobile devices*/
 @media only screen and (max-width: 415px) {
   #illustration-content {
     width: 100%;
@@ -797,6 +798,59 @@ $menu-items: 3;
   .contact-popup {
     width: 80%;
     right: 7%;
+    top: 6%;
+  }
+}
+
+/*Tablets in portfolio*/
+@media only screen and (min-width: 416px) and (max-width: 768px) {
+  #illustration-content {
+    width: 80%;
+  }
+  #call-to-action {
+    width: 40%;
+    text-align: center;
+    padding-top: 160px;
+    /*padding-left: 10%;*/
+    float: left;
+    padding-bottom: 100px;
+  }
+  #call-to-action h1 {
+    font-size: 1.3rem;
+  }
+  #call-to-action h2 {
+    font-size: 1.1rem;
+  }
+  .contact-popup {
+    width: 80%;
+    right: 7%;
+    top: 16%;
+  }
+}
+
+/*For smaller desktop and tablets*/
+@media only screen and (min-width: 769px) and (max-width: 1115px) {
+  #call-to-action {
+    width: 50%;
+    text-align: left;
+    padding-top: 175px;
+    /*padding-left: 10%;*/
+    float: left;
+    padding-bottom: 100px;
+  }
+
+  #call-to-action h1 {
+    font-size: 1.5rem;
+  }
+
+  #call-to-action h2 {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  .contact-popup {
+    width: 60%;
+    right: 17%;
     top: 6%;
   }
 }
